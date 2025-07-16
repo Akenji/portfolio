@@ -4,311 +4,104 @@ import { Category, type Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
-		slug: 'ket-academy',
+		slug: 'Math Gen',
 		color: '#5e95e3',
-		description:
-			'Hybrid online learning platform for KET academy.',
-		shortDescription:'Hybrid online learning platform for KET academy.',
-		links: [{ to: 'https://ketacademy.web.app', label: 'Visit Website' , newTab: true}],
-		logo: Assets.KetAcademy,
-		name: 'KET Academy',
+		description:' Math Expression Generator for generating and visualizing math expressions using MathJax. Enabled users to select and render different mathematical concepts interactively. User can practice solving maths concepts with the generated expressions',
+		shortDescription:'Math Expression Generator.',
+		links: [{ to: 'https://drive.google.com/file/d/1NDP9HNa-J8m0SeIMnBK0V2090KVoXjz4/view?usp=sharing', label: 'Demo Vid' , newTab: true}],
+		logo: Assets.Unknown,
+		name: 'Math Gen',
 		period: {
-			from: new Date(2023, 4), 
+			from: new Date(2025, 1), to: new Date(2025, 2) 
 		},
-		skills: getSkills('reactjs', 'tailwind', 'scss', 'firebase'),
+		skills: getSkills('ts','css','html', 'vite', 'js'), //should match slugs in skills.params.ts
 		type: 'Web application',
-		screenshots: [
+		 screenshots: [
 			{
 				label: 'Mockup',
-				src: '/images/ket/image.png',
+				src: '/images/math-gen/math-gen.png',
 			},
 			{
-				label: 'Home',
-				src: '/images/ket/home.png',
+				label: 'Expression Generator',
+				src: '/images/math-gen/generator.png',
 			},
 			{
-				label: 'Authentication',
-				src: '/images/ket/auth.png',
+				label: 'Share Expression',
+				src: '/images/math-gen/share.jpg',
 			},
-			{
-				label: 'About',
-				src: '/images/ket/about.png',
-			},
-			{
-				label: '404 Not Found',
-				src: '/images/ket/404.png',
-			},
-		],
+		], 
 		categories: [Category.Web,]
 
 	},
 	{
-		slug: 'worklin',
-		color: '#55ee55',
+		slug: 'SPO',
+		color: '#000',
 		description:
-			'An prototype attendance management system with location checking.',
+			' Solar Panel Placement Optimize.',
 		shortDescription:
-		'An prototype attendance management system with location checking.',
-		links: [{ to: 'https://vtcinternationale.pythonanywhere.com/', label: 'Visit Website' }],
-		logo: Assets.VTC,
-		name: 'Worklin',
-		period: {
-			from: new Date(2023, 5), to: new Date(2023, 6)
-		},
-		skills: getSkills('django', 'jquery', 'tailwind', 'html'),
-		type: 'Dynamic Website',
-		screenshots: [
-			{
-				label: 'Home Page',
-				src: '/images/vtc/home.png',
-			},
-			{
-				label: 'Authentitcation',
-				src: '/images/ket/auth.png',
-			},
-			{
-				label: 'Dashboard',
-				src: '/images/vtc/dash.png',
-			},
-		],
-		categories: [Category.Web,]
-
-	},
-	{
-		slug: 'kingston',
-		color: '#C850C0',
-		description:
-			'Library management system with in Java .',
-		shortDescription:'Library management system with in Java .',
-		links: [{ to: '', label: 'Github' , newTab: true}],
-		logo: Assets.KetAcademy,
-		name: 'Kingston Library',
-		period: {
-			from: new Date(2023, 0), to: new Date(2023, 2)
-		},
-		skills: getSkills('java', 'javafx', 'css', 'mysql'),
-		type: 'Desktop Application',
-		screenshots: [
-			{
-				label: 'Welcome Page',
-				src: '/images/lib/Screenshot (34).png',
-			},
-			{
-				label: 'Create Account',
-				src: '/images/lib/Screenshot (36).png',
-			},
-			{
-				label: 'Login ',
-				src: '/images/lib/Screenshot (37).png',
-			},
-
-			{
-				label: 'Dashboard',
-				src: '/images/lib/Screenshot (55).png',
-			},
-			{
-				label: 'Profile ',
-				src: '/images/lib/Screenshot (40).png',
-			},
-			{
-				label: 'Notification ',
-				src: '/images/lib/Screenshot (44).png',
-			},
-
-
-			{
-				label: 'New Book',
-				src: '/images/lib/Screenshot (49).png',
-			},
-			{
-				label: 'Books ',
-				src: '/images/lib/Screenshot (51).png',
-			},
-			{
-				label: 'Code ',
-				src: '/images/lib/Screenshot (47).png',
-			},
-		],
-		categories: [Category.Desktop]
-
-	},
-
-	{
-		slug: 'slide-puzzle',
-		color: '#FB6376',
-		description:
-			'Slide Puzzle for windows CLI with CLi programming and autosolving.',
-		shortDescription:'Slide Puzzle for windows CLI with CLi programming and autosolving.',
-		links: [{ to: '', label: 'Github' , newTab: true}],
-		logo: Assets.CLI,
-		name: 'Slide Puzzle',
-		period: {
-			from: new Date(2023, 0), to: new Date(2023, 2)
-		},
-		skills: getSkills('cpp'),
-		type: 'Command Line Application',
-		screenshots: [
-			{
-				label: 'Solving',
-				src: '/images/slide-puzzle/solving.png',
-			},
-			{
-				label: 'Intro',
-				src: '/images/slide-puzzle/solving.png',
-			},
-			{
-				label: 'Solved by COmputer',
-				src: '/images/slide-puzzle/solving.png',
-			},
-			{
-				label: 'Demo Video',
-				src: '/images/slide-puzzle/solving.png',
-			},
-			
-		],
-		categories: [Category.CLI]
-
-	},
-
-
-	{
-		slug: 'ttt',
-		color: '#FB6376',
-		description:
-			'Tic tac toe game for windows CLI with CLi programming and implementation of minimax algorithm.',
-		shortDescription:
-		'Tic tac toe game for windows CLI with CLi programming and implementation of minimax algorithm.',
-		links: [{ to: '', label: 'Github' , newTab: true}],
-		logo: Assets.TTT,
-		name: 'Tic Tac Toe',
-		period: {
-			from: new Date(2023, 0), to: new Date(2023, 2)
-		},
-		skills: getSkills('cpp'),
-		type: 'Command Line Application',
-		screenshots: [
-			{
-				label: 'Game on',
-				src: '/images/ttt/Screenshot (30).png',
-			},
-			{
-				label: 'Home',
-				src: '/images/ttt/Screenshot (25).png',
-			},
-			{
-				label: 'Choose Player',
-				src: '/images/ttt/Screenshot (28).png',
-			},
-	
-			{
-				label: 'Lost the Game',
-				src: '/images/ttt/Screenshot (31).png',
-			},
-			
-		],
-		categories: [Category.CLI]
-
-	},
-
-	{
-		slug: 'chess',
-		color: '#FFC482',
-		description:
-			'Chess game with custom engine and 2D graphics.',
-		shortDescription:'Chess',
-		links: [{ to: '', label: 'Github' , newTab: true}],
-		logo: Assets.Chess,
-		name: 'Chess',
-		period: {
-			from: new Date(2023, 0), to: new Date(2023, 2)
-		},
-		skills: getSkills('cpp', 'raylib'),
-		type: '2D graphics',
-		screenshots: [
-			{
-				label: 'Game starts',
-				src: '/images/chess/2.png',
-			},
-			{
-				label: 'Code',
-				src: '/images/chess/1.png',
-			},
-		],
-		categories: [Category.Graphics2D, Category.Game]
-	},
-
-	{
-		slug: 'checkers',
-		color: '#AB2fAF',
-		description:
-			'Checkers game.',
-		shortDescription:'Checkers game for two players (or vs Computer) with implementation of minimax algorithm.',
-		links: [{ to: '', label: 'View on Github' , newTab: true}],
-		logo: Assets.Checkers,
-		name: 'Checkers',
-		period: {
-			from: new Date(2023, 0), to: new Date(2023, 2)
-		},
-		skills: getSkills('python', 'pygame'),
-
-		type: '2D graphics',
-		screenshots: [
-			{
-				label: 'Game UI',
-				src: '/images/checkers/init.png',
-			},
-			{
-				label: 'Linting positions',
-				src: '/images/checkers/linting2.png',
-			},
-			{
-				label: 'King',
-				src: '/images/checkers/king.png',
-			},
-			{
-				label: 'Complete',
-				src: '/images/checkers/checkmate.png',
-			},
-			
-		],
-		categories: [Category.Graphics2D, Category.Game]
-
-	},
-
-	{
-		slug: 'shooter',
-		color: '#AB2fAF',
-		description:
-			'Shooting Game with Pygame.',
-		shortDescription:'Shooting game with pygame. Sound effects and keyboard controls.',
-		links: [{ to: '', label: 'View on Github' , newTab: true}],
+		' Solar Panel Placement Optimize.',
+		links: [{ to:'https://github.com/Akenji/solar-panel-placement-optimizer', label: 'Github' , newTab: true}],
 		logo: Assets.Unknown,
-		name: 'Shooter',
+		name: 'panel optimizer',
 		period: {
-			from: new Date(2023, 0), to: new Date(2023, 2)
+			from: new Date(2025, 1)
 		},
-		skills: getSkills('python', 'pygame'),
-
-		type: '2D graphics',
+		skills: getSkills('python', 'threejs', 'flask', 'mysql'),
+		type: 'Command Line Application',
 		screenshots: [
-			
 			{
-				label: 'Game Start',
-				src: '/images/shooter/game.png',
+				label: 'Heat Map',
+				src: '/images/panel-optimizer/heat-map.png',
 			},
 			{
-				label: 'Game Ended',
-				src: '/images/shooter/end.png',
+				label: 'Power Output Patterns',
+				src: '/images/panel-optimizer/power-pattern.png',
 			},
 			{
-				label: 'Code',
-				src: '/images/shooter/code.png',
+				label: 'Controls',
+				src: '/images/panel-optimizer/controls.jpg',
+			},
+		],
+		categories: [Category.CLI,]
+	},
+
+	{
+		slug: 'malaria-preidiction',
+		color: '#FB6376',
+		description:
+			'Malaria Outbreak Prediction using Radom Forest Algorithm.',
+		shortDescription:'Malaria Outbreak Prediction.',
+		links: [{ to: 'https://github.com/Akenji/malaria_prediction', label: 'Github' , newTab: true}],
+		logo: Assets.CLI,
+		name: 'Malaria Prediction',
+		period: {
+			from: new Date(2025, 0)
+		},
+		skills: getSkills('python', 'mysql'),
+		type: 'Command Line Application',
+		screenshots: [
+			{
+				label: 'Feature Impotance',
+				src: '/images/malaria-prediction/feat-impt.png',
+			},
+			{
+				label: 'Prediction Results',
+				src: '/images/malaria-prediction/results.png',
+			},
+			{
+				label: 'Confusion Matrix',
+				src: '/images/malaria-prediction/confusion-matrix.png',
+			},
+			{
+				label: 'Performance Evaluation',
+				src: '/images/malaria-prediction/performance.png',
 			},
 			
 		],
-		categories: [Category.Graphics2D, Category.Game]
+		categories: [Category.CLI]
 
 	},
+	
 ];
 
 export default MY_PROJECTS;
