@@ -8,15 +8,19 @@ export type ArrayElementType<ArrayType extends readonly unknown[]> =
 	ArrayType extends readonly (infer ElementType)[] ? ElementType : never;
 
 const MY_SKILLS = [
-	/*({
-		//slug: 'django',
-		//color: 'green',
-		//description: "Django Web framework ",
-		//logo: Assets.Django,
-		//name: 'Django',
-		//categories: [Category.Web], 
-
-
+	/*({		
+		certifications: [
+			{
+			   by:"Full Github Course by Microsoft Learn X DataCamp.				",
+				certificate:"https://drive.google.com/file/d/1Gi7IqTXS_fy8oQbiwDFJ-8qdtAUC57_4/view?usp=sharing",
+				date: new Date()
+		   },
+		   {
+				by:"Easy to use, stylish placeholders",
+				certificate:"https://picsum.photos/400/300",
+				date: new Date()
+			}
+	   ]
 	}), */
 
 	s({
@@ -36,6 +40,7 @@ const MY_SKILLS = [
 		name: 'Typescript',
 		categories: [Category.Web],
 	}),
+
 	s({
 		slug: 'css',
 		color: 'blue',
@@ -62,14 +67,16 @@ const MY_SKILLS = [
 		name: 'HTML',
 		categories: [Category.Web],
 	}),
-	/*s({
-		slug: 'scss',
-		color: 'pink',
-		description: "Sassy Cascading Style Sheets		",
-		logo: Assets.Sass,
-		name: 'SCSS',
-		categories: [Category.Web],
-	}), */
+
+	s({
+        slug: 'flask',
+        color: 'white',
+        description: "Lightweight Python web framework for building web applications.",
+        logo: Assets.Flask,
+        name: 'Flask',
+        categories: [Category.Web, Category.Backend]
+    }),
+
 	s({
 		slug: 'reactjs',
 		color: 'cyan',
@@ -78,22 +85,7 @@ const MY_SKILLS = [
 		name: 'React Js',
 		categories: [Category.Web],
 	}),
-	/*s({
-		slug: 'jquery',
-		color: 'blue',
-		description:"",
-		logo: Assets.JQuery,
-		name: 'JQuery',
-		categories: [Category.Web],
-	}), 
-	s({
-		slug: 'svelte',
-		color: 'orange',
-		description: svelte,
-		logo: Assets.Svelte,
-		name: 'Svelte',
-		categories: [Category.Web],
-	}), */
+	
 	s({
 		slug: 'firebase',
 		color: 'yellow',
@@ -113,40 +105,22 @@ const MY_SKILLS = [
 	}),
 
 	s({
-		slug: 'c',
-		color: 'blue',
-		description:"Pointers, Memory management, etc",
-		logo: Assets.C,
-		name: 'C',
-		categories: [Category.System]
+		slug: 'vite',
+		color: 'purple',
+		description:'frontend tool. Fast and lightweight development server.',
+		logo: Assets.Vite,
+		name: 'Vite',
+		categories: [Category.Web]
 	}),
 
-	/*s({
-		slug: 'cpp',
-		color: 'blue',
-		description:"Templates, Smart pointers, The Standard library, OOP, etc",
-		logo: Assets.Cpp,
-		name: 'C++',
-		categories: [Category.System, Category.Game]
-	}), 
-
 	s({
-		slug: 'java',
-		color: 'orange',
-		description:"Generics, The standard library, OOP, Collections, etc",
-		logo: Assets.Java,
-		name: 'Java',
-		categories: [Category.System, Category.Desktop]
-	}), 
-
-	s({
-		slug: 'javafx',
-		color: 'teal',
-		description: "Scene builder, FXML, CSS, etc",
-		logo: Assets.JavaFX,
-		name: 'JavaFX',
-		categories: [Category.Desktop]
-	}), */
+        slug: 'threejs',
+        color: 'black',
+        description: "JavaScript 3D library for creating WebGL-powered interactive 3D graphics.",
+        logo: Assets.ThreeJS,
+        name: 'Three.js',
+        categories: [Category.Web, Category.Graphics]
+    }),
 
 	s({
 		slug: 'python',
