@@ -17,7 +17,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		links: [ /*{
 			to: "https://vtcinternationale.pythonanywhere.com/", label:"Attendance Management System Prototype", newTab: true
 		} */ ],
-		logo: Assets.Unknown,
+		logo: Assets.NGT,
 		/* tasks: [
 			"Implemented a custom LLaMA-based summarization model to optimize content clarity and readability."
 		] */
@@ -35,7 +35,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 		name: 'Data Science Apprentice',
 		color: '#ffffff',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Datacamp,
 	},
 
 	{
@@ -54,7 +54,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 			label: "Agripreneur Hub Website",
 			newTab: true,
 		}],
-		logo: Assets.Unknown,
+		logo: Assets.AGHUB,
 	},
 	
 ];
