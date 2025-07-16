@@ -9,7 +9,10 @@ const a = (light: string, dark?: string): Asset =>
 
 const Assets = {
 	CLI: a('cli.svg'),
-	NGT: a('NGT.JPEG'),
+	NGT: a('ngt.png'),
+	Datacamp: a('datacamp-learning-platform-logo.png'),
+	AGHUB: a('aghub.png'),
+	ThreeJS: a('threejs.png'),
 
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.svg'),
