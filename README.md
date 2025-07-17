@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 Portfolio Template Credits to `https://github.com/RiadhAdrani/slick-portfolio-svelte`
 
 # create-svelte
@@ -27,3 +29,13 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
+>>>>>>> 8cd5552a0a7c7be09c39f4f8142df9d7bbe0b02e
+Portfolio Template Credits to `https://github.com/RiadhAdrani/slick-portfolio-svelte`
+
+# create-svelte
+
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+
+## Developing
+
+Clone repo and install dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
