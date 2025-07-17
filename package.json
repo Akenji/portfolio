@@ -53,6 +53,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-vercel": "^2.1.0",
 		"dayjs": "^1.11.10",
 		"flowbite-svelte": "^0.44.21",
 		"moment": "^2.29.4"
