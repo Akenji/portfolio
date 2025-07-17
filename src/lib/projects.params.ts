@@ -12,7 +12,7 @@ const MY_PROJECTS: Array<Project> = [
 		logo: Assets.Unknown,
 		name: 'Math Gen',
 		period: {
-			from: new Date(2025, 1), to: new Date(2025, 2) 
+			from: new Date(2025, 1), to: new Date(2025, 1, 20) 
 		},
 		skills: getSkills('ts','css','html', 'vite', 'js'), //should match slugs in skills.params.ts
 		type: 'Web application',
@@ -44,7 +44,7 @@ const MY_PROJECTS: Array<Project> = [
 		logo: Assets.Unknown,
 		name: 'panel optimizer',
 		period: {
-			from: new Date(2025, 1)
+			from: new Date(2025, 1), to: new Date(2025, 1, 25)
 		},
 		skills: getSkills('python', 'threejs', 'flask', 'mysql'),
 		type: 'Command Line Application',
@@ -75,7 +75,7 @@ const MY_PROJECTS: Array<Project> = [
 		logo: Assets.CLI,
 		name: 'Malaria Prediction',
 		period: {
-			from: new Date(2025, 0)
+			from: new Date(2025, 0), to: new Date(2025, 0, 15)
 		},
 		skills: getSkills('python', 'mysql'),
 		type: 'Command Line Application',

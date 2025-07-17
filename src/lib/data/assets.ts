@@ -93,8 +93,6 @@ const Assets = {
 	TTT: a('ttt.svg')
 };
 
-
-
 export default Assets;
 
 let currentTheme: boolean;
